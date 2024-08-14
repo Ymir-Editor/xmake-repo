@@ -18,7 +18,7 @@ package("ynbt")
 
     on_test(function (package)
         assert(
-            package:has_cxxfuncs(
+            package:has_cfuncs(
                 "YNBT::TagFromId",
                 {includes = "YNBT/ynbt.hpp"}
             )
