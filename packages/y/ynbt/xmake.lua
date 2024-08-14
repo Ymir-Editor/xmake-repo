@@ -1,6 +1,6 @@
 package("ynbt")
     set_description("YNBT is a cross platform NBT ser/de library for C++23")
-    add_license("MIT")
+    set_license("MIT")
     add_deps("abseil")
     add_deps("zlib")
 
