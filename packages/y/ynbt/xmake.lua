@@ -16,7 +16,7 @@ package("ynbt")
     end)
    
     on_test(function (package)
-        assert(package:has_cxxtypes("YNBT::NBTFile", {includes = "ynbt/ynbt.hpp", {configs = {languages="cxx23"}}}))
+        assert(package:has_cxxtypes("YNBT::NBTFile", {includes = "ynbt/ynbt.hpp", configs = {languages="cxx23"}}))
     end)
 
     
