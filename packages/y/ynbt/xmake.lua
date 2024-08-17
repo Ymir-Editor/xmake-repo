@@ -13,10 +13,10 @@ package("ynbt")
             configs.kind = "shared"
         end
         import("package.tools.xmake").install(package, configs)
-    end
+    end)
 
     on_test(function (package)
-        assert(has_cxxtypes("YNBT::NBTFile", {includes = "ynbt/ynbt.hpp"}))
+        assert(package:has_cxxtypes("YNBT::NBTFile", {includes = "ynbt/ynbt.hpp"}))
     end)
 
     
