@@ -3,7 +3,7 @@ package("ynbt")
     set_license("MIT")
     add_urls("https://github.com/Ymir-Editor/YNBT.git")
 
-    add_version("1.3", "7184803d593a0399884f0d12644f760c5ccbdf17")
+    add_versions("1.3", "7184803d593a0399884f0d12644f760c5ccbdf17")
 
     add_deps("abseil")
     add_deps("zlib")
