@@ -6,6 +6,7 @@ package("leveldb-mcpe")
     add_deps("cmake")
     add_deps("snappy")
     add_deps("zlib")
+    add_defines("DLLX=")
     if is_plat("linux") then
         add_syslinks("pthread")
     end
