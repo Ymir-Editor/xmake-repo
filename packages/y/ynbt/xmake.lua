@@ -17,7 +17,7 @@ package("ynbt")
     end)
    
     on_test(function (package)
-        assert(package:has_cxxtypes("YNBT::TagFromId", {includes = "ynbt/ynbt.hpp", configs = {languages="cxx23"}}))
+        assert(package:has_cxxfuncs("YNBT::TagFromId", {includes = "ynbt/ynbt.hpp", configs = {languages="cxx23"}}))
     end)
 
     
