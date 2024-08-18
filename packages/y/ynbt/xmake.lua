@@ -18,7 +18,7 @@ package("ynbt")
    
     on_test(function (package)
         assert(package:check_cxxsnippets({test = [[
-           void test() {
+           bool test() {
             auto tag = YNBT::TagFromId(0);
             if (tag.index() == 0)
                 return true;
