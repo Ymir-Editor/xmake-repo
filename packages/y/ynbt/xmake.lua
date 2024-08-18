@@ -4,6 +4,7 @@ package("ynbt")
     add_urls("https://github.com/Ymir-Editor/YNBT.git")
 
     add_versions("1.3", "7184803d593a0399884f0d12644f760c5ccbdf17")
+    add_versions("1.3.1", "b3262bba1034d5be2343a611119f442233135a29")
 
     add_deps("abseil")
     add_deps("zlib")
@@ -16,7 +17,7 @@ package("ynbt")
     end)
    
     on_test(function (package)
-        assert(package:has_cxxtypes("YNBT::NBTFile", {includes = "ynbt/ynbt.hpp", configs = {languages="cxx23"}}))
+        assert(package:has_cxxtypes("YNBT::TagFromId", {includes = "ynbt/ynbt.hpp", configs = {languages="cxx23"}}))
     end)
 
     
