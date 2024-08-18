@@ -17,7 +17,12 @@ package("ynbt")
     end)
    
     on_test(function (package)
-        assert(package:has_cxxfuncs("YNBT::TagFromId", {includes = "ynbt/ynbt.hpp", configs = {languages="cxx23"}}))
+        assert(package:check_cxxsnippets({test = [[
+            auto tag = YNBT::TagFromId(0);
+            if (tag.index() == 0)
+                return true;
+            return false;
+        ]]}, {includes = "ynbt/ynbt.hpp", configs = {languages="cxx23"}}))
     end)
 
     
